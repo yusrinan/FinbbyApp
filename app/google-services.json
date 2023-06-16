@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1014684005990",
+    "firebase_url": "https://finbbyapp-chat-default-rtdb.firebaseio.com",
+    "project_id": "finbbyapp-chat",
+    "storage_bucket": "finbbyapp-chat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1014684005990:android:4f28b13765bd7ab2089fa7",
+        "android_client_info": {
+          "package_name": "com.example.finbbyapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1014684005990-ktjb86tlujtvi9ap5k37giroo95kam25.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3S7qTJpH-SXc02pNVwvgZIr-ndk4a5JQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1014684005990-ktjb86tlujtvi9ap5k37giroo95kam25.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

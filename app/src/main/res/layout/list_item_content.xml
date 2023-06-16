@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="30dp"
+    android:paddingTop="20dp">
+
+    <ImageView
+        android:id="@+id/banner_content"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:src="@drawable/c"
+        android:scaleType="centerCrop"
+        card_view:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="-1dp"
+        card_view:cardBackgroundColor="#D9D9D9"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/banner_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_content"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="5.5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profil"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="@+id/title_content"
+                card_view:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/title_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:text="Alammm"
+                android:fontFamily="@font/poppin"
+                android:autoLink="web"
+                android:textStyle="bold"
+                card_view:layout_constraintStart_toEndOf="@+id/img_content"
+                card_view:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/deskripsi_content"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/poppin"
+                android:maxLines="2"
+                android:layout_marginRight="12dp"
+                android:textSize="12sp"
+                android:ellipsize="end"
+                android:text="Yudhdhje hd edh uheu dud egde ddu dgd wdg dudhcu hducudcu hudch udsch duhc udchduch duhh hhh hhhhhh hhh hhh hc deded ded dd"
+                android:textColor="@color/black"
+                card_view:layout_constraintBottom_toBottomOf="@+id/img_content"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="0.0"
+                card_view:layout_constraintStart_toStartOf="@+id/title_content"
+                card_view:layout_constraintTop_toBottomOf="@+id/title_content"
+                card_view:layout_constraintVertical_bias="0.416" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
